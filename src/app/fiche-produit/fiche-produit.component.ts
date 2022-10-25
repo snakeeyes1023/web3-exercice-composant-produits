@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-fiche-produit',
@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class FicheProduitComponent implements OnInit {
 
   constructor() { }
+
+  @Input() nom = '';
+  @Input() prix = 0;
+  @Input() description = '';
 
   ngOnInit(): void {
   }
